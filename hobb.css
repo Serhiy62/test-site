@@ -7,6 +7,39 @@ a{
     text-decoration: none;
     transition: all.6s ease;
 }
+.sport{
+    padding: 5px;
+    background-color: darkgrey;
+    margin-left: 7px;
+    border-radius: 5px;
+    color: floralwhite;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.mus{
+    padding: 5px;
+    background-color: darkgrey;
+    margin-left: 12%;
+    border-radius: 5px;
+    color: floralwhite;
+    float:left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.res{
+    padding: 5px;
+    background-color: darkgrey;
+    margin-left: 12%;
+    border-radius: 5px;
+    color: floralwhite;
+    float:left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
 a:hover{
     color: #ce9595;
     text-decoration: none;
@@ -21,6 +54,9 @@ hr{
     height: 1px;
     padding: 0px;
 }
+h3{
+    color:#000000;
+}
 body{
     background-image:url(family.jpg);
     position: inherit;
@@ -33,6 +69,8 @@ img{
     max-width: 100%;
     height: auto;
     border-radius:40px;
+    float:left;
+    margin-left: 20%;
 }
 header, footer{
     width:98%;
@@ -51,14 +89,16 @@ nav{
 }
 footer{
     border-top: 2px solid #bfbbbb;
-    margin-top: 10px;
+    margin-top: 7%;
     padding: 1%;
     padding-bottom: 2%;
+}
+footer, #page-wrap:after{
+    height: 10px;
 }
 footer img{
    width: 10%;
 }
-
 .left{
     float:left;
 }
@@ -75,18 +115,18 @@ footer img{
     background-color: #ccc4c4;
 }
 @media(min-width:900px){
-#menu #center #left{
+.sport .mus .res{
     width: 31.33333%;
     margin-right: 2%;
     }}
 @media(max-width:899px) and (min-width:700px){
-#menu #center #left{
+.sport .mus .res{
     width: 80%;
     margin-left: 10%;
     margin-bottom: 10px;
     }}
 @media(max-width:699px){
-#menu #center #left{
+.sport .mus .res{
     width: 100%;
     margin-bottom: 10px;
     }}
