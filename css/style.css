@@ -1,0 +1,305 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+html{
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    color: #504a4a;
+    background: url(../img/fon.jpg);
+    font-size: 1em;
+    font-family: "Segoe UI",sans-serif;
+    line-height: 135%;
+}
+a{
+    color: #eb6060;
+    text-decoration: none;
+    transition: all.6s ease;
+    -chrome-transition: all.6s ease;
+}
+a:hover{
+    color: #ce9595;
+    text-decoration: none;
+    transition: all.6s ease;
+    -chrome-transition: all.6s ease;
+}
+a:active{
+    color: blueviolet;
+}
+hr{
+    display: block;
+    border: 0px;
+    height: 1px;
+    border-top: 1px solid #e2caca;
+    padding: 0px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+    
+}
+img:hover{
+    transform:scale(1.15)rotate(2deg);
+	transition:transform 2s;
+}
+.right{
+    float: right;
+}
+.left{
+    float:left; 
+}
+.clear{
+    clear: both;
+}
+/*Selection Block*/
+::selection{
+    background: #b37fd3;
+    color: white;
+}
+::-chrome-selection{
+    background: #b37fd3;
+    color: white;
+}
+header, footer{
+    width:98%;
+    background-color: #fdf4f4;
+    float: left;
+}
+header{
+    border-bottom: 2px solid #f4ebeb;
+    padding: 1%;
+}
+#logo{
+    font-size: 2em;
+    font-family: Comic Sans MS, sans-serif;
+    color: silver;
+}
+.contact{
+     font-size: 1.5em;
+    font-family: Comic Sans MS, sans-serif;
+    margin-left: 15px;
+}
+input[type=text].field{
+    border-radius: 5px;
+    border: 2px solid #f8f0f0;
+    padding: 5px;
+    margin-left: 15px;
+}
+input[type=text].field:focus{
+    border: 2px solid #eb6060;
+}
+#menu{
+    color: #46350e;
+    font-family: Comic Sans MS sans-serif;
+    font-size: 1.7em;
+}
+#menu hr{
+    width: 500px;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+#menuHref a{
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 5px;
+    color: #0d0c0c;
+}
+#menuHref a:hover{
+    background-color: #ccc4c4;
+}
+/*Основні стилі для сайта*/
+#wrapper{
+    float: left;
+    width: 100%;
+}
+#wrapper #arcticles{
+    float: left;
+    width: 80%;
+    margin-left:10%;
+}
+#wrapper #arcticles article{
+     float: left;
+     border: 1px solid #a79898;
+     box-sizing: border-box;
+     border-radius: 5px;
+     min-height: 400px;
+}
+@media(min-width:900px){
+#wrapper #arcticles article{
+    width: 31.33333%;
+    margin-right: 2%;
+    }}
+@media(max-width:899px) and (min-width:700px){
+#wrapper #arcticles article{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+    }}
+@media(max-width:699px){
+#wrapper #arcticles article{
+    width: 100%;
+    margin-bottom: 10px;
+    }}
+
+#wrapper #arcticles article img{
+    width: 100%;
+    height:200px;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom: 1px solid silver;
+    margin-bottom: 10px;
+}
+#wrapper #arcticles article h2{
+    width: 90%;
+    margin-left: 5%;
+    font-size: 1.7em;
+    color: #605c5c;
+}
+#wrapper #arcticles article p{
+    width: 80%;
+    margin-left: 10%;
+    text-indent: 1em;
+}
+#wrapper #arcticles article a{
+    padding: 5px;
+    background-color: darkgrey;
+    margin-left: 5px;
+    border-radius: 5px;
+    color: floralwhite;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#wrapper #arcticles article a:hover{
+    background-color: #4b4e4d;
+}
+/*Стилі для сторінки про нас*/
+#about_us{
+    width: 60%;
+    float: left;
+    background-color: #fafafa;
+    border-radius: 5px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    padding: 1%;
+}
+#columRight{
+    width: 30%;
+    float: left;
+    margin-left: 4%;
+    background-color: #fafafa;
+    border-radius: 5px;
+    border: 1px solid silver;
+    box-sizing: border-box;
+    padding: 1%;
+}
+/*Стилі для форми*/
+form{
+  width: 60%;
+  margin-left: 20%;
+  float: left;
+}
+form label{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+form input{
+    border-radius: 5px;
+    border: 2px solid #f8f0f0;
+    background-color: fafafa;
+    padding: 5px;
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+    width: 40%;
+}
+form input:focus,form textarea:focus{
+    border: 2px solid #eb6060;
+}
+form textarea{
+    width: 60%;
+    float: left;
+    clear: both;
+    background-color: fafafa;
+    border: 2px solid silver;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1.7em;
+}
+form #send{
+    float: left;
+    padding: 10px;
+    background-color: #b95555;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 2em;
+    color: floralwhite;
+}
+form #send:hover{
+     background-color: #831414;
+}
+/*Центральний блок нашого сайту*/
+#main_soc_block{
+   width: 100%;
+    padding: 2% 0;
+    border-bottom: 2px solid silver;
+    border-top:  2px solid silver;
+    margin: 20px auto;
+    float: left;
+    background: url(../img/family.jpg);
+    height: 150px;
+    position: relative;
+}
+#main_soc_block_in{
+  text-align: center;
+    padding: 1%;
+    height: 100px;
+    background-color: #fafafa;
+    box-sizing: border-box;
+    border: 1px solid silver;
+    border-radius: 7px;
+    width: 400px;
+    max-width: 98%;
+}
+#main_soc_block_in a{
+     float: left;
+    padding: 5px 10px;
+    background-color: #bfacac;
+    border-radius: 6px;
+    color: floralwhite;
+    margin-left: 30%;
+    margin-top: 10px;
+}
+#main_soc_block_in a:hover{
+    background-color: #4b4e4d;
+}
+
+/*Стилі для футера*/
+footer{
+    border-top: 2px solid #bfbbbb;
+    margin-top: 10px;
+    padding: 1%;
+    padding-bottom: 2%;
+}
+footer img{
+   width: 10%;
+}
+#page-wrap:after{
+    content: "";
+    display: block;
+}
+footer, #page-wrap:after{
+    height: 10px;
+}
+#page-wrap{
+    min-height: 94%;
+    margin-bottom: -10px;
+}

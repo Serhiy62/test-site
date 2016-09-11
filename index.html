@@ -1,36 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" type="text/css"/>
-    <title>test-site</title>
-</head>
-<body>
-    <header>
-        <nav id="menu"> </nav><hr>
-    <nav id="menuHref">
-      <a href="index.html">Home</a>
-      <a href="educ.html">Educations</a>
-      <a href="gal.html">Gallery</a>
-      <a href="hobb.html">Hobbies</a>
-      <a href="cont.html">Contacts</a>
-    </nav>
-    </header><br><br>
-       <nav><h1>Hello everybody! My name is Serhiy and this site about me!</h1></nav><hr><br>
     
-    
-    <section id="center">
-        <h3>This is all about me and my family</h3>
-        <img src="center.jpg" alt="foto" title="my family">
-    </section>
-    
-    
-    <footer>
-        <span class="left">Copyright &copy; 2016</span>
+    <head>
+        <meta  charset="UTF-8"/>
+        <meta name="keywords" content="test, site, website"/>
+        <meta name="description" content="This site is about me"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        <link rel="shortcut icon" href="img/mini.png" type="image/x-icon"/>
+        <title>My site</title>
+    </head>
+    <body>
+       <div id="page-wrap">
+        <header>
+          <a href="index.html" title="Home" id="logo">Home</a> 
+          <span class="contact"><a href="about.html" title="Information about me">About me</a></span>
+          <input type="text" class="field" placeholder="Let's help to find"/> 
+          <span class="right"><span class="contact"><a href="feedback.html" title="Feedback">Feedback</a></span>
+          </span>
+        </header>
+        <div class="clear"><br /></div>
+        <center>
+            <div id="menu">Sections<hr /></div>
+            <div id="menuHref">
+                <a href="educ.html">Education</a>
+                <a href="hobb.html">Hobby</a>
+                <a href="gal.html">Gallery</a>
+                <a href="cont.html">Сontacts</a>
+            </div>
+        </center>
+        <div id="wrapper">
+            <div id="arcticles">
+                <article>
+                         <img src="img/educ.jpg" alt="Image" title="Image"/>
+                         <p>At the moment i have finished the course in educational Logos IT Academy in the direction <b>Junior Java Developer ...</b></p>
+                       <a href="http://lgs.lviv.ua/java/" title="See article"> Read more</a>
+                </article>
+                  <article>
+                        <!--<h2>Hobby</h2><br>-->
+                         <img src="img/tottenham.png" alt="Image" title="Image"/>
+                         <p>Most of all i enjoy my life and the meaning of a family of course! But football is football ... something ...<b>Tottenham Hotspur!</b></p>
+                      <a href="http://www.tottenhamhotspur.com/" title="See article">Read more</a>
+                </article>
+                  <article>
+                      <img src="img/fam_1.jpg" alt="Image" title="Image"/>
+                       <p><b>My hobbies and meaning of my life is family ...!</b></p><br><br>
+                      <a href="gal.html" title="See gallery"> Read more</a>
+                </article>
+            </div>
+            <div class="clear">
+            <div id="main_soc_block">
+               <center>
+                <div id="main_soc_block_in">
+                      <h3>Feedback</h3>
+                    <p>Ask questions and demand i always answer</p>
+                    <a href="feedback.html" title="Feedback">Feedback</a>
+                </div>
+                </center>
+            </div>
+            </div>
+            <div id="arcticles">
+                    <article>
+                    <img src="img/hobby.jpg" alt="Image" title="Hobby"/>
+                    <h2>Hobby</h2>
+                    <p>I will be a lot of different and interesting hobby
+                    ,<b>but here are the main ones ...</b></p>
+                    <a href="hobb.html" title="See more">Lock my hobbies</a>
+                </article>
+                  <article>
+                      <img src="img/literature.jpg" alt="image" title="Literature"/>
+                       <h2>Literature</h2>
+                         <p>I like reading.
+                         But no favorite genres or authors
+                         all depends on the mood of the place ...</p>
+                </article>
+                  <article>
+                      <img src="img/contact.png" alt="image" title="My contacts"/>
+                       <h2>Contact my</h2>
+                         <p>Go to my contacts,
+                         and select the most best way for you to contact me!</p><br>
+                 <a href="cont.html" title="contacts">Lock my contacts</a>
+                </article>
+            </div>
+            <div class="clear"><br /></div>
+        </div>
+        </div>
+        
+        <footer>
+           <span class="left">Copiryght &copy; 2016</span>
            <span class="right">Social buttons
-             <img src="Facebook_.png" alt="Facebook Group" title="Facebook Group"/>
-             <img src="youtube.png" alt="YouTube" title="Come to YouTube">
+             <img src="img/Facebook_.png" alt="Facebook Group" title="Facebook Group"/>
+             <img src="img/youtube.png" alt="YouTube" title="Come to YouTube">
+             <img src="img/linkedin.png" alt="YouTube" title="Come to Linkedin">
            </span>
-    </footer>
-</body>
+        </footer>
+    </body>
 </html>
